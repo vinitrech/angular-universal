@@ -11,7 +11,7 @@ import {isPlatformBrowser} from "@angular/common";
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    // ng universal enables ssr, so the project should be executed in a node server
+    // ng universal enables node based engine rendering (can be used as ssr or at build time), so the project should be executed in a node server
     // the ssr works so that the page visited is rendered very fast (HTML + CSS initial render) and with full content for web crawlers to index
     // once the app loads, the user will get the full interaction of a normal spa app
 
